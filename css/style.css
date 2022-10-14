@@ -1,3 +1,4 @@
+/* Step 1 */
 @keyframes moveLogo {
     from {width: 25px;}
     to {width: 475px;}
@@ -11,12 +12,14 @@ header img {
     animation-duration: 5s;
 }
 
+/* Step 2 */
 body {
     font-family: 'Poppins', serif;
     background: url(../images/concrete_seamless.png);
     background-color: #f1f1f1;
 }
 
+/* Step 3 */
 header {
     align-items: center;
     display: flex;
@@ -25,12 +28,14 @@ header {
     justify-content: space-between;
 }
 
+/* Step 4 */
 .nav_links {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+/* Step 5 */
 nav-item:visited {
     display: flex;
     flex-direction: column;
@@ -40,6 +45,7 @@ a:link, a:visited {
     color: #0000ff;
 }
 
+/* Step 6 */
 .card > header {
     background: #288088;
     border: 2px solid #45ADAD;
@@ -47,6 +53,7 @@ a:link, a:visited {
     border-radius: 50px 50px 0 0;
 }
 
+/* Step 7 */
 .card {
     border-radius: 50px 50px 0px 0px;
     display: flex;
@@ -54,6 +61,7 @@ a:link, a:visited {
     flex-basis: 450px;
 }
 
+/* Step 8 */
 .pricing {
     justify-content: center;
     align-items: center;
@@ -61,19 +69,23 @@ a:link, a:visited {
     flex-wrap: wrap;
 }
 
+/* Step 9 */
 .gallery > img {
     border: 10px solid #50C7C7;
     margin: 10px;
     width: 300px;
 }
 
+/* Step 10 */
 .gallery {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
 }
 
+/* Specifications for when the screen-size is greater than 900px */
 @media screen and (min-width:900px) {
+    /* Step 11 */
     header {
         display: flex;
         flex-direction: row;
@@ -84,6 +96,7 @@ a:link, a:visited {
         flex-flow: row;
     }
 
+    /* Step 12 */
     .card {
         width: 275px;
         flex-basis: 275px;
@@ -95,25 +108,31 @@ a:link, a:visited {
         flex-flow: row;
         align-items: center;
     }
-
-   body > header {
+    
+    /* Step 13 */
+    body > header {
         position: sticky;
         top: 0px;
     }
 }
 
+/* Specifications for when the user prefers reduced motion */
 @media all and (prefers-reduced-motion: reduce) {
+    /* Step 14 */
     header img {
         animation: none;
     }
 }
 
+/* Specifications for when the page is printed in portrait mode */
 @media print {
+    /* Steps 15 & 16 */
     body {
         font-family: Arial, Helvetica;
         background-image: none;
     }
 
+    /* Step 17 */
     nav {
         width: 100%;
     }
@@ -124,21 +143,25 @@ a:link, a:visited {
         justify-content: space-around;
     }
 
+    /* Step 18 */
     .pricing {
         display: flex;
         align-items: flex-end;
         flex-direction: row nowrap;
     }
 
+    /* Step 19 */
     .card {
         flex-basis: 325px;
         border: 2px solid #45ADDD;
     }
-
+    
+    /* Step 20 */
     .gallery, #gallery {
         display: none;
     }
 
+    /* Step 21 */
     .card ul li:nth-child(2)::after {
         content: '👍';
     }
