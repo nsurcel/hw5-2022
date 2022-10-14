@@ -63,10 +63,10 @@ a:link, a:visited {
 
 /* Step 8 */
 .pricing {
-    justify-content: center;
-    align-items: center;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Step 9 */
@@ -87,25 +87,22 @@ a:link, a:visited {
 @media screen and (min-width:900px) {
     /* Step 11 */
     header {
-        display: flex;
         flex-direction: row;
     }
 
     .nav_links {
-        display: flex;
-        flex-flow: row;
+        flex-direction: row;
     }
 
     /* Step 12 */
     .card {
-        width: 275px;
         flex-basis: 275px;
     }
 
     .pricing {
-        justify-content: center;
         display: flex;
-        flex-flow: row;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
     }
     
@@ -138,16 +135,14 @@ a:link, a:visited {
     }
     
     .nav_links {
-        display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
 
     /* Step 18 */
     .pricing {
-        display: flex;
         align-items: flex-end;
-        flex-direction: row nowrap;
+        flex-wrap: nowrap;
     }
 
     /* Step 19 */
