@@ -155,7 +155,7 @@ a:link, a:visited {
         flex-basis: 325px;
         border: 2px solid #45ADDD;
     }
-    
+
     /* Step 20 */
     .gallery, #gallery {
         display: none;
